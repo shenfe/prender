@@ -1,30 +1,33 @@
 {
-    "scripts": {
-      "build": "rollup -c ./build/rollup.config.js",
-      "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "devDependencies": {
-      "eslint": "^4.7.2",
-      "eslint-config-standard": "^10.2.1",
-      "eslint-plugin-import": "^2.7.0",
-      "eslint-plugin-node": "^5.1.1",
-      "eslint-plugin-promise": "^3.5.0",
-      "eslint-plugin-standard": "^3.0.1",
-      "rollup": "^0.46.0",
-      "rollup-plugin-uglify": "^2.0.1",
-      "source-map-support": "^0.4.15"
-    },
-    "name": "prpl",
-    "dependencies": {},
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/shenfe/prpl.git"
-    },
-    "author": "hengwu",
-    "license": "MIT",
-    "bugs": {
-      "url": "https://github.com/shenfe/prpl/issues"
-    },
-    "homepage": "https://github.com/shenfe/prpl#readme"
-  }
-  
+  "scripts": {
+    "build": "./node_modules/.bin/webpack --config ./build/webpack.config.js --progress --colors",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "eslint": "^4.7.2",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "webpack": "^3.7.1"
+  },
+  "name": "prpl",
+  "description": "prpl",
+  "dependencies": {
+    "babel-polyfill": "^6.26.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shenfe/prpl.git"
+  },
+  "author": "hengwu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shenfe/prpl/issues"
+  },
+  "homepage": "https://github.com/shenfe/prpl#readme"
+}
